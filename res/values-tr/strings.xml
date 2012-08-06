@@ -1,176 +1,308 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2007 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_error_title">Kamera hatası</string>
+    <string name="cannot_connect_camera">Kameraya bağlanılamıyor.</string>
+    <string name="camera_disabled">Kamera, güvenlik politikaları nedeniyle devre dışı bırakıldı.</string>
+    <string name="camera_label">Kamera</string>
+    <string name="video_camera_label">Video Kamera</string>
+    <string name="gallery_camera_bucket_name">Kamera resimleri</string>
+    <string name="gallery_camera_videos_bucket_name">Kamera videoları</string>
+    <string name="wait">Lütfen bekleyin...</string>
+    <string name="no_storage">Kamerayı kullanmadan önce USB bellek ekleyin.</string>
+    <string name="not_enough_space">USB belleğiniz dolu.</string>
+    <string name="preparing_sd">USB bellek hazırlanıyor…</string>
+    <string name="access_sd_fail">USB belleğe erişilemedi.</string>
+    <string name="confirm_restore_message">Kameranın varsayılan ayarlarını geri yüklemek istiyor musunuz?</string>
+    <string name="review_play">Oynat</string>
+    <string name="review_cancel">İPTAL</string>
+    <string name="review_ok">BİTTİ</string>
+    <string name="review_retake">YENİDEN ÇEK</string>
+    <string name="camera_gallery_photos_text">Galeri</string>
+    <string name="time_lapse_title">Zaman atlamalı kayıt</string>
+    <string name="pref_camera_id_title">Kamera seç</string>
+    <string name="pref_camera_id_entry_back">Arka</string>
+    <string name="pref_camera_id_entry_front">Ön</string>
+    <string name="pref_camera_recordlocation_title">Depo konumu</string>
+    <string name="pref_camera_recordlocation_entry_off">Kapalı</string>
+    <string name="pref_camera_recordlocation_entry_on">Açık</string>
+    <string name="pref_video_quality_title">Video kalitesi</string>
+    <string name="pref_video_time_lapse_frame_interval_title">Zaman atlama aralığı</string>
+    <string name="pref_camera_settings_category">Kamera ayarları</string>
+    <string name="pref_camcorder_settings_category">Kamera ayarları</string>
+    <string name="pref_camera_power_shutter_title">Güç Deklanşör</string>
+    <string name="pref_camera_power_shutter_default">Kapalı</string>
+    <string name="pref_camera_picturesize_title">Resim boyutu</string>
+    <string name="pref_camera_picturesize_entry_2592x1936">5M piksel</string>
+    <string name="pref_camera_picturesize_entry_2048x1536">3M piksel</string>
+    <string name="pref_camera_picturesize_entry_1600x1200">2M piksel</string>
+    <string name="pref_camera_picturesize_entry_1280x960">1,3M piksel</string>
+    <string name="pref_camera_picturesize_entry_1024x768">1M piksel</string>
+    <string name="pref_camera_picturesize_entry_640x480">VGA</string>
+    <string name="pref_camera_picturesize_entry_320x240">QVGA</string>
+    <string name="pref_camera_focusmode_title">Odak modu</string>
+    <string name="pref_camera_focusmode_entry_auto">Otomatik</string>
+    <string name="pref_camera_focusmode_entry_infinity">Sonsuz</string>
+    <string name="pref_camera_focusmode_entry_macro">Makro</string>
+    <string name="pref_camera_flashmode_title">Flaş modu</string>
+    <string name="pref_camera_flashmode_entry_auto">Otomatik</string>
+    <string name="pref_camera_flashmode_entry_on">Açık</string>
+    <string name="pref_camera_flashmode_entry_off">Kapalı</string>
+    <string name="pref_camera_whitebalance_title">Beyaz dengesi</string>
+    <string name="pref_camera_whitebalance_entry_auto">Otomatik</string>
+    <string name="pref_camera_whitebalance_entry_incandescent">Ampul</string>
+    <string name="pref_camera_whitebalance_entry_daylight">Gün Işığı</string>
+    <string name="pref_camera_whitebalance_entry_fluorescent">Floresan</string>
+    <string name="pref_camera_whitebalance_entry_cloudy">Bulutlu</string>
+    <string name="pref_camera_scenemode_title">Sahne modu</string>
+    <string name="pref_camera_scenemode_entry_auto">Otomatik</string>
+    <string name="pref_camera_scenemode_entry_action">İşlem</string>
+    <string name="pref_camera_scenemode_entry_night">Gece</string>
+    <string name="pref_camera_scenemode_entry_sunset">Gün batımı</string>
+    <string name="pref_camera_scenemode_entry_party">Parti</string>
+    <string name="not_selectable_in_scene_mode">Sahne modunda seçilemez.</string>
+    <string name="pref_restore_title">Kamera ayarları</string>
+    <string name="pref_restore_detail">Varsayılanları geri yükle</string>
+    <string name="pref_exposure_title">Pozlama</string>
+    <string name="dialog_ok">Tamam</string>
+    <string name="spaceIsLow_content">USB belleğinizde boş alan azaldı. Kalite ayarını değiştirin veya bazı resimleri ya da diğer dosyaları silin.</string>
+    <string name="video_reach_size_limit">Boyut sınırına ulaşıldı.</string>
+    <string name="share_picture_via">Resmi şunun üzerinden paylaş:</string>
+    <string name="share_video_via">"Videoyu şunun üzerndn  paylaş:"</string>
+    <string name="no_picture_to_share">Paylaşılacak resim yok.</string>
+    <string name="no_video_to_share">Paylaşılacak video yok.</string>
+    <string name="pano_too_fast_prompt">Çok hızlı</string>
+    <string name="pano_dialog_prepare_preview">Panorama hazırlanıyor</string>
+    <string name="pano_dialog_panorama_failed">Panorama kaydedilemedi.</string>
+    <string name="pano_dialog_title">Panorama</string>
+    <string name="pano_capture_indication">Panorama kaydediliyor</string>
+    <string name="pano_dialog_waiting_previous">Önceki panorama bekleniyor</string>
+    <string name="pano_review_saving_indication_str">Kaydediliyor...</string>
+    <string name="tap_to_focus">Odaklamak için dokunun.</string>
+    <string name="pref_video_effect_title">Efektler</string>
+    <string name="effect_none">Yok</string>
+    <string name="effect_goofy_face_squeeze">Sıkıştır</string>
+    <string name="effect_goofy_face_big_eyes">Büyük gözler</string>
+    <string name="effect_goofy_face_big_mouth">Büyük ağız</string>
+    <string name="effect_goofy_face_small_mouth">Küçük ağız</string>
+    <string name="effect_goofy_face_big_nose">Büyük burun</string>
+    <string name="effect_goofy_face_small_eyes">Küçük gözler</string>
+    <string name="effect_backdropper_space">Uzayda</string>
+    <string name="effect_backdropper_sunset">Gün Batımı</string>
+    <string name="effect_backdropper_gallery">Videonuz</string>
+    <string name="bg_replacement_message">"Cihazınızı yerleştirin.
+Kısa bir süre için görüntüden çıkın."</string>
+    <string name="not_selectable_in_effect">Efekt açıkken seçilemez.</string>
+    <string name="video_snapshot_hint">Kayıt sırasında fotoğraf çekmek için dokunun.</string>
+    <string name="disable_video_snapshot_hint">Özel efektler açıkken video anlık görüntü yakalama devre dışıdır.</string>
+    <string name="clear_effects">Efektleri temizle</string>
+    <string name="effect_silly_faces">KOMİK SURATLAR</string>
+    <string name="effect_background">ARKA PLAN</string>
+    <string name="accessibility_shutter_button">Deklanşör düğmesi</string>
+    <string name="accessibility_review_thumbnail">En son fotoğraf</string>
+    <string name="accessibility_camera_picker">Ön/arka kamera anahtarı</string>
+    <string name="accessibility_mode_picker">Kamera, video veya panorama seçici</string>
+    <string name="accessibility_second_level_indicators">Diğer ayar denetimleri</string>
+    <string name="accessibility_back_to_first_level">Ayar denetimlerini kapat</string>
+    <string name="accessibility_zoom_control">Zum denetimi</string>
+    <string name="accessibility_decrement">%1$s azalt</string>
+    <string name="accessibility_increment">%1$s artır</string>
+    <string name="accessibility_switch">%1$s anahtarı</string>
+    <string name="accessibility_switch_to_camera">Fotoğrafa geçiş yap</string>
+    <string name="accessibility_switch_to_video">Videoya geç</string>
+    <string name="accessibility_switch_to_panorama">Panorama moduna geç</string>
+    <string name="settings">Ayarlar</string>
+    <string name="prefs_accounts">Hesap ayarları</string>
+    <string name="prefs_data_usage">Veri kullanım ayarları</string>
+    <string name="prefs_other_settings">Diğer ayarlar</string>
+    <string name="about_gallery">Galeri Hakkında</string>
+    <string name="sync_on_wifi_only_title">"Yalnızca Kablosuz'da senk et"</string>
+    <string name="sync_on_wifi_only_description">Arka planda senkronizasyonu yalnızca Kablosuz bağlantı varsa yap</string>
+    <string name="photo_sync_is_on">Google Foto senk AÇIK</string>
+    <string name="photo_sync_is_off">Google Foto senk KAPALI</string>
+    <string name="helptext_photo_sync">Senk tercihini değiştirin veya hesabı kaldırın</string>
+    <string name="add_account">Hesap ekle</string>
+    <string name="google_photos">Google Foto</string>
+    <string name="open_source_licenses">Açık Kaynak Lisansları</string>
+    <string name="gallery_intro_msg">"Galeri bir Google Hesabı ile daha iyi çalışır.
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="1928079047368929634">"Galeri"</string>
-    <string name="gadget_title" msgid="259405922673466798">"Resim çerçevesi"</string>
-    <string name="details_ms" msgid="940634969189855292">"%1$02d:%2$02d"</string>
-    <string name="details_hms" msgid="3215779248094151255">"%1$d:%2$02d:%3$02d"</string>
-    <string name="movie_view_label" msgid="3526526872644898229">"Video oynatıcı"</string>
-    <string name="loading_video" msgid="4013492720121891585">"Video yükleniyor..."</string>
-    <string name="loading_image" msgid="1200894415793838191">"Resim yükleniyor…"</string>
-    <string name="loading_account" msgid="928195413034552034">"Hesap yükleniyor..."</string>
-    <string name="resume_playing_title" msgid="8996677350649355013">"Videoyu sürdür"</string>
-    <string name="resume_playing_message" msgid="5184414518126703481">"Yürütme şuradan devam ettirilsin mi: %s ?"</string>
-    <string name="resume_playing_resume" msgid="3847915469173852416">"Yürütmeyi sürdür"</string>
-    <string name="loading" msgid="7038208555304563571">"Yükleniyor…"</string>
-    <string name="fail_to_load" msgid="8394392853646664505">"Yüklenemedi"</string>
-    <string name="fail_to_load_image" msgid="6155388718549782425">"Resim yüklenemedi"</string>
-    <string name="no_thumbnail" msgid="284723185546429750">"Küçük resim yok"</string>
-    <string name="resume_playing_restart" msgid="5471008499835769292">"Başlat"</string>
-    <string name="crop_save_text" msgid="152200178986698300">"Tamam"</string>
-    <string name="ok" msgid="5296833083983263293">"Tamam"</string>
-    <string name="multiface_crop_help" msgid="2554690102655855657">"Başlamak için bir yüze dokunun."</string>
-    <string name="saving_image" msgid="7270334453636349407">"Resim kaydediliyor..."</string>
-    <string name="save_error" msgid="6857408774183654970">"Kırpılmış resim kaydedilemedi."</string>
-    <string name="crop_label" msgid="521114301871349328">"Resmi kırp"</string>
-    <string name="select_image" msgid="7841406150484742140">"Fotoğraf seçin"</string>
-    <string name="select_video" msgid="4859510992798615076">"Video seçin"</string>
-    <string name="select_item" msgid="2816923896202086390">"Öğe seçin"</string>
-    <string name="select_album" msgid="1557063764849434077">"Albüm seçin"</string>
-    <string name="select_group" msgid="6744208543323307114">"Grup seçin"</string>
-    <string name="set_image" msgid="2331476809308010401">"Resmi şu şekilde ayarla:"</string>
-    <string name="set_wallpaper" msgid="8491121226190175017">"Duvar kağıdını ayarla"</string>
-    <string name="wallpaper" msgid="140165383777262070">"Duvar kağıdı ayarlanıyor..."</string>
-    <string name="camera_setas_wallpaper" msgid="797463183863414289">"Duvar Kağıdı"</string>
-    <string name="delete" msgid="2839695998251824487">"Sil"</string>
-  <plurals name="delete_selection">
-    <item quantity="one" msgid="6453379735401083732">"Seçilen öğe silinsin mi?"</item>
-    <item quantity="other" msgid="5874316486520635333">"Seçilen öğeler silinsin mi?"</item>
-  </plurals>
-    <string name="confirm" msgid="8646870096527848520">"Onayla"</string>
-    <string name="cancel" msgid="3637516880917356226">"İptal"</string>
-    <string name="share" msgid="3619042788254195341">"Paylaş"</string>
-    <string name="deleted" msgid="6795433049119073871">"Silindi"</string>
-    <string name="undo" msgid="2930873956446586313">"GERİ AL"</string>
-    <string name="select_all" msgid="3403283025220282175">"Tümünü seç"</string>
-    <string name="deselect_all" msgid="5758897506061723684">"Tümünün seçimini kaldır"</string>
-    <string name="slideshow" msgid="4355906903247112975">"Slayt Gösterisi"</string>
-    <string name="details" msgid="8415120088556445230">"Ayrıntılar"</string>
-    <string name="details_title" msgid="2611396603977441273">"%1$d / %2$d öğe:"</string>
-    <string name="close" msgid="5585646033158453043">"Kapat"</string>
-    <string name="switch_to_camera" msgid="7280111806675169992">"Kameraya Geç"</string>
-  <plurals name="number_of_items_selected">
-    <item quantity="zero" msgid="2142579311530586258">"%1$d öğe seçildi"</item>
-    <item quantity="one" msgid="2478365152745637768">"%1$d öğe seçildi"</item>
-    <item quantity="other" msgid="754722656147810487">"%1$d öğe seçildi"</item>
-  </plurals>
-  <plurals name="number_of_albums_selected">
-    <item quantity="zero" msgid="749292746814788132">"%1$d albüm seçildi"</item>
-    <item quantity="one" msgid="6184377003099987825">"%1$d albüm seçildi"</item>
-    <item quantity="other" msgid="53105607141906130">"%1$d albüm seçildi"</item>
-  </plurals>
-  <plurals name="number_of_groups_selected">
-    <item quantity="zero" msgid="3466388370310869238">"%1$d grup seçildi"</item>
-    <item quantity="one" msgid="5030162638216034260">"%1$d grup seçildi"</item>
-    <item quantity="other" msgid="3512041363942842738">"%1$d grup seçildi"</item>
-  </plurals>
-    <string name="show_on_map" msgid="6157544221201750980">"Haritada göster"</string>
-    <string name="rotate_left" msgid="5888273317282539839">"Sola döndür"</string>
-    <string name="rotate_right" msgid="6776325835923384839">"Sağa döndür"</string>
-    <string name="no_such_item" msgid="5315144556325243400">"Öğe bulunamadı."</string>
-    <string name="edit" msgid="1502273844748580847">"Düzenle"</string>
-    <string name="process_caching_requests" msgid="8722939570307386071">"Önbelleğe alma istekleri işleniyor"</string>
-    <string name="caching_label" msgid="4521059045896269095">"Önbelleğe alınıyor..."</string>
-    <string name="crop_action" msgid="3427470284074377001">"Kırp"</string>
-    <string name="set_as" msgid="3636764710790507868">"Şu şekilde ayarla:"</string>
-    <string name="video_err" msgid="7003051631792271009">"Video oynatılamıyor."</string>
-    <string name="group_by_location" msgid="316641628989023253">"Konuma göre"</string>
-    <string name="group_by_time" msgid="9046168567717963573">"Tarihe göre"</string>
-    <string name="group_by_tags" msgid="3568731317210676160">"Etiketlere göre"</string>
-    <string name="group_by_faces" msgid="1566351636227274906">"Kişilere göre"</string>
-    <string name="group_by_album" msgid="1532818636053818958">"Albüme göre"</string>
-    <string name="group_by_size" msgid="153766174950394155">"Boyuta göre"</string>
-    <string name="untagged" msgid="7281481064509590402">"Etiketlenmemiş"</string>
-    <string name="no_location" msgid="4043624857489331676">"Konum bilgisi yok"</string>
-    <string name="no_connectivity" msgid="7164037617297293668">"Ağ sorunları nedeniyle bazı konumlar tanımlanamadı."</string>
-    <string name="sync_album_error" msgid="1020688062900977530">"Bu albümdeki fotoğraflar indirilemedi. Daha sonra tekrar deneyin."</string>
-    <string name="show_images_only" msgid="7263218480867672653">"Yalnızca resimler"</string>
-    <string name="show_videos_only" msgid="3850394623678871697">"Yalnızca videolar"</string>
-    <string name="show_all" msgid="6963292714584735149">"Resimler ve videolar"</string>
-    <string name="appwidget_title" msgid="6410561146863700411">"Fotoğraf Galerisi"</string>
-    <string name="appwidget_empty_text" msgid="1228925628357366957">"Fotoğraf yok."</string>
-    <string name="crop_saved" msgid="1595985909779105158">"Kırpılan resim <xliff:g id="FOLDER_NAME">%s</xliff:g> klasörüne kaydedildi."</string>
-    <string name="no_albums_alert" msgid="4111744447491690896">"Kullanılabilir albüm yok."</string>
-    <string name="empty_album" msgid="4542880442593595494">"Kullanılabilir resim/video yok."</string>
-    <string name="picasa_posts" msgid="1497721615718760613">"Yayınlar"</string>
-    <string name="make_available_offline" msgid="5157950985488297112">"Çevrimdışı kullanılabilir yap"</string>
-    <string name="sync_picasa_albums" msgid="8522572542111169872">"Yenile"</string>
-    <string name="done" msgid="217672440064436595">"Bitti"</string>
-    <string name="sequence_in_set" msgid="7235465319919457488">"%1$d / %2$d öğe:"</string>
-    <string name="title" msgid="7622928349908052569">"Başlık"</string>
-    <string name="description" msgid="3016729318096557520">"Açıklama"</string>
-    <string name="time" msgid="1367953006052876956">"Saat"</string>
-    <string name="location" msgid="3432705876921618314">"Konum"</string>
-    <string name="path" msgid="4725740395885105824">"Yol"</string>
-    <string name="width" msgid="9215847239714321097">"Genişlik"</string>
-    <string name="height" msgid="3648885449443787772">"Yükseklik"</string>
-    <string name="orientation" msgid="4958327983165245513">"Yön"</string>
-    <string name="duration" msgid="8160058911218541616">"Süre"</string>
-    <string name="mimetype" msgid="8024168704337990470">"MIME türü"</string>
-    <string name="file_size" msgid="8486169301588318915">"Dosya boyutu"</string>
-    <string name="maker" msgid="7921835498034236197">"Yapımcı"</string>
-    <string name="model" msgid="8240207064064337366">"Model"</string>
-    <string name="flash" msgid="2816779031261147723">"Flaş"</string>
-    <string name="aperture" msgid="5920657630303915195">"Diyafram"</string>
-    <string name="focal_length" msgid="1291383769749877010">"Odak Uzaklığı"</string>
-    <string name="white_balance" msgid="1582509289994216078">"Beyaz dengesi"</string>
-    <string name="exposure_time" msgid="3990163680281058826">"Pozlama süresi"</string>
-    <string name="iso" msgid="5028296664327335940">"ISO"</string>
-    <string name="unit_mm" msgid="1125768433254329136">"mm"</string>
-    <string name="manual" msgid="6608905477477607865">"El ile"</string>
-    <string name="auto" msgid="4296941368722892821">"Otomatik"</string>
-    <string name="flash_on" msgid="7891556231891837284">"Flaş patladı"</string>
-    <string name="flash_off" msgid="1445443413822680010">"Flaş yok"</string>
-  <plurals name="make_albums_available_offline">
-    <item quantity="one" msgid="2171596356101611086">"Albüm çevrimdışı kullanıma hazırlanıyor."</item>
-    <item quantity="other" msgid="4948604338155959389">"Albümler çevrimdışı kullanıma hazırlanıyor."</item>
-  </plurals>
-    <string name="try_to_set_local_album_available_offline" msgid="2184754031896160755">"Bu öğe yerel olarak depolandı ve çevrimdışı kullanılabilir."</string>
-    <string name="set_label_all_albums" msgid="4581863582996336783">"Tüm albümler"</string>
-    <string name="set_label_local_albums" msgid="6698133661656266702">"Yerel albümler"</string>
-    <string name="set_label_mtp_devices" msgid="1283513183744896368">"MTP cihazlar"</string>
-    <string name="set_label_picasa_albums" msgid="5356258354953935895">"Picasa albümleri"</string>
-    <string name="free_space_format" msgid="8766337315709161215">"<xliff:g id="BYTES">%s</xliff:g> boş"</string>
-    <string name="size_below" msgid="2074956730721942260">"<xliff:g id="SIZE">%1$s</xliff:g> veya daha küçük"</string>
-    <string name="size_above" msgid="5324398253474104087">"<xliff:g id="SIZE">%1$s</xliff:g> veya daha büyük"</string>
-    <string name="size_between" msgid="8779660840898917208">"<xliff:g id="MIN_SIZE">%1$s</xliff:g> - <xliff:g id="MAX_SIZE">%2$s</xliff:g>"</string>
-    <string name="Import" msgid="3985447518557474672">"İçe aktar"</string>
-    <string name="import_complete" msgid="3875040287486199999">"İçe aktrm tamamlandı"</string>
-    <string name="import_fail" msgid="8497942380703298808">"İçe aktarılamadı"</string>
-    <string name="camera_connected" msgid="916021826223448591">"Kamera bağlı."</string>
-    <string name="camera_disconnected" msgid="2100559901676329496">"Kamera bağlantısı kesildi."</string>
-    <string name="click_import" msgid="6407959065464291972">"İçe aktarmak için buraya dokunun"</string>
-    <string name="widget_type_album" msgid="6013045393140135468">"Albüm seçin"</string>
-    <string name="widget_type_shuffle" msgid="8594622705019763768">"Tüm resimleri karıştır"</string>
-    <string name="widget_type_photo" msgid="6267065337367795355">"Bir resim seç"</string>
-    <string name="widget_type" msgid="1364653978966343448">"Resimleri seçin"</string>
-    <string name="slideshow_dream_name" msgid="6915963319933437083">"Slayt gösterisi"</string>
-    <string name="albums" msgid="7320787705180057947">"Albümler"</string>
-    <string name="times" msgid="2023033894889499219">"Saatler"</string>
-    <string name="locations" msgid="6649297994083130305">"Konumlar"</string>
-    <string name="people" msgid="4114003823747292747">"Kişiler"</string>
-    <string name="tags" msgid="5539648765482935955">"Etiketler"</string>
-    <string name="group_by" msgid="4308299657902209357">"Grupla:"</string>
-    <string name="settings" msgid="1534847740615665736">"Ayarlar"</string>
-    <string name="add_account" msgid="4271217504968243974">"Hesap ekle"</string>
-    <string name="folder_camera" msgid="4714658994809533480">"Kamera"</string>
-    <string name="folder_download" msgid="7186215137642323932">"İndir"</string>
-    <string name="folder_imported" msgid="2773581395524747099">"İçe aktarıldı"</string>
-    <string name="folder_screenshot" msgid="7200396565864213450">"Ekran görüntüsü"</string>
-    <string name="help" msgid="7368960711153618354">"Yardım"</string>
+• Herhangi bir web tarayıcısından erişin
+• Fotoğraflarınızı güvenle yedekleyin"</string>
+    <string name="update_plusone">Güncelle</string>
+    <string name="require_update_plusone_title">"Google+'yı güncelle?"</string>
+    <string name="require_update_plusone_message">"Google fotoğraflarınızı Galeri'de görüntülemeye devam etmek için Google+ %1$s veya üstü gereklidir."</string>
+    <string name="ps_cache_status_title">Picasa fotoğrafları önceden getiriliyor:</string>
+    <string name="ps_cache_status">%2$s fotoğraftan %1$s tanesini indir</string>
+    <string name="ps_cache_done">Seçilen fotoğraflar artık çevrimdışı olarak kullanılabilir.</string>
+    <string name="photoeditor_name">Fotoğraf Stüdyosu</string>
+    <string name="loading_failure">Fotoğraf yüklenemedi</string>
+    <string name="saving_failure">Düzenlenen fotoğraf kaydedilemedi</string>
+    <string name="photo_saved">Düzenlenen fotoğraf %s içine kaydedildi</string>
+    <string name="discard_unsaved_photo">Kaydedilmeyen değişiklikler silinsin mi?</string>
+    <string name="yes">Evet</string>
+    <string name="save">KAYDET</string>
+    <string name="autofix">Otomatik düzelt</string>
+    <string name="crop">Kırp</string>
+    <string name="crossprocess">Çapraz Banyo</string>
+    <string name="documentary">Belgesel</string>
+    <string name="doodle">Doodle</string>
+    <string name="duotone">İki tonlu</string>
+    <string name="facelift">Yüz Gerdirme</string>
+    <string name="facetan">Yanık Tenli Yüz</string>
+    <string name="filllight">Dolgu Işığı</string>
+    <string name="fisheye">Balıkgözü</string>
+    <string name="flip">Çevir</string>
+    <string name="grain">Film Greni</string>
+    <string name="grayscale">Siyah Beyaz</string>
+    <string name="highlight">Parlak noktalar</string>
+    <string name="lomoish">Lomo</string>
+    <string name="negative">Negatif</string>
+    <string name="posterize">Poster Efkt Uyg</string>
+    <string name="redeye">Kırmızı Göz</string>
+    <string name="rotate">Döndür</string>
+    <string name="saturation">Doygunluk</string>
+    <string name="sepia">Sepya Tonu</string>
+    <string name="shadow">Gölgeler</string>
+    <string name="sharpen">Keskinleştir</string>
+    <string name="straighten">Düzleştir</string>
+    <string name="temperature">Sıcaklık</string>
+    <string name="tint">Tonlama</string>
+    <string name="vignette">Vinyet</string>
+    <string name="crop_tooltip">Fotoğrafı kırpmak içni işaretçileri sürükleyin</string>
+    <string name="doodle_tooltip">Doodle için fotoğrafın üzerinde çizin</string>
+    <string name="flip_tooltip">Çevirmek için fotoğrafı sürükleyin</string>
+    <string name="redeye_tooltip">Kırmızı gözleri hafifçe vurarak düzeltin</string>
+    <string name="rotate_tooltip">Döndürmek için fotoğrafı sürükleyin</string>
+    <string name="straighten_tooltip">Düzleştirmek için fotoğrafı sürükleyin</string>
+    <string name="app_name">Galeri</string>
+    <string name="gadget_title">Resim çerçevesi</string>
+    <string name="details_ms">%1$02d:%2$02d</string>
+    <string name="details_hms">%1$d:%2$02d:%3$02d</string>
+    <string name="movie_view_label">Video oynatıcı</string>
+    <string name="loading_video">Video yükleniyor...</string>
+    <string name="loading_image">Resim yükleniyor…</string>
+    <string name="loading_account">Hesap yükleniyor...</string>
+    <string name="resume_playing_title">Videoyu sürdür</string>
+    <string name="resume_playing_message">Yürütme şuradan devam ettirilsin mi: %s ?</string>
+    <string name="resume_playing_resume">Yürütmeyi sürdür</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="fail_to_load">Yüklenemedi</string>
+    <string name="fail_to_load_image">Resim yüklenemedi</string>
+    <string name="no_thumbnail">Küçük resim yok</string>
+    <string name="resume_playing_restart">Başlat</string>
+    <string name="crop_save_text">Tamam</string>
+    <string name="ok">Tamam</string>
+    <string name="multiface_crop_help">Başlamak için bir yüze dokunun.</string>
+    <string name="saving_image">Resim kaydediliyor...</string>
+    <string name="save_error">Kırpılmış resim kaydedilemedi.</string>
+    <string name="crop_label">Resmi kırp</string>
+    <string name="select_image">Fotoğraf seçin</string>
+    <string name="select_video">Video seçin</string>
+    <string name="select_item">Öğe seçin</string>
+    <string name="select_album">Albüm seçin</string>
+    <string name="select_group">Grup seçin</string>
+    <string name="set_image">Resmi şu şekilde ayarla:</string>
+    <string name="set_wallpaper">Duvar kağıdını ayarla</string>
+    <string name="wallpaper">Duvar kağıdı ayarlanıyor...</string>
+    <string name="camera_setas_wallpaper">Duvar Kağıdı</string>
+    <string name="delete">Sil</string>
+    <string name="confirm">Onayla</string>
+    <string name="cancel">İptal</string>
+    <string name="share">Paylaş</string>
+    <string name="deleted">Silindi</string>
+    <string name="undo">GERİ AL</string>
+    <string name="select_all">Tümünü seç</string>
+    <string name="deselect_all">Tümünün seçimini kaldır</string>
+    <string name="slideshow">Slayt Gösterisi</string>
+    <string name="details">Ayrıntılar</string>
+    <string name="details_title">%1$d / %2$d öğe:</string>
+    <string name="close">Kapat</string>
+    <string name="switch_to_camera">Kameraya Geç</string>
+    <string name="show_on_map">Haritada göster</string>
+    <string name="rotate_left">Sola döndür</string>
+    <string name="rotate_right">Sağa döndür</string>
+    <string name="no_such_item">Öğe bulunamadı.</string>
+    <string name="edit">Düzenle</string>
+    <string name="process_caching_requests">Önbelleğe alma istekleri işleniyor</string>
+    <string name="caching_label">Önbelleğe alınıyor...</string>
+    <string name="crop_action">Kırp</string>
+    <string name="set_as">Şu şekilde ayarla:</string>
+    <string name="video_err">Video oynatılamıyor.</string>
+    <string name="group_by_location">Konuma göre</string>
+    <string name="group_by_time">Tarihe göre</string>
+    <string name="group_by_tags">Etiketlere göre</string>
+    <string name="group_by_faces">Kişilere göre</string>
+    <string name="group_by_album">Albüme göre</string>
+    <string name="group_by_size">Boyuta göre</string>
+    <string name="untagged">Etiketlenmemiş</string>
+    <string name="no_location">Konum bilgisi yok</string>
+    <string name="no_connectivity">Ağ sorunları nedeniyle bazı konumlar tanımlanamadı.</string>
+    <string name="sync_album_error">Bu albümdeki fotoğraflar indirilemedi. Daha sonra tekrar deneyin.</string>
+    <string name="show_images_only">Yalnızca resimler</string>
+    <string name="show_videos_only">Yalnızca videolar</string>
+    <string name="show_all">Resimler ve videolar</string>
+    <string name="appwidget_title">Fotoğraf Galerisi</string>
+    <string name="appwidget_empty_text">Fotoğraf yok.</string>
+    <string name="crop_saved">Kırpılan resim %s klasörüne kaydedildi.</string>
+    <string name="no_albums_alert">Kullanılabilir albüm yok.</string>
+    <string name="empty_album">Kullanılabilir resim/video yok.</string>
+    <string name="picasa_posts">Yayınlar</string>
+    <string name="make_available_offline">Çevrimdışı kullanılabilir yap</string>
+    <string name="sync_picasa_albums">Yenile</string>
+    <string name="done">Bitti</string>
+    <string name="sequence_in_set">%1$d / %2$d öğe:</string>
+    <string name="title">Başlık</string>
+    <string name="description">Açıklama</string>
+    <string name="time">Saat</string>
+    <string name="location">Konum</string>
+    <string name="path">Yol</string>
+    <string name="width">Genişlik</string>
+    <string name="height">Yükseklik</string>
+    <string name="orientation">Yön</string>
+    <string name="duration">Süre</string>
+    <string name="mimetype">MIME türü</string>
+    <string name="file_size">Dosya boyutu</string>
+    <string name="maker">Yapımcı</string>
+    <string name="model">Model</string>
+    <string name="flash">Flaş</string>
+    <string name="aperture">Diyafram</string>
+    <string name="focal_length">Odak Uzaklığı</string>
+    <string name="white_balance">Beyaz dengesi</string>
+    <string name="exposure_time">Pozlama süresi</string>
+    <string name="iso">ISO</string>
+    <string name="unit_mm">mm</string>
+    <string name="manual">El ile</string>
+    <string name="auto">Otomatik</string>
+    <string name="flash_on">Flaş patladı</string>
+    <string name="flash_off">Flaş yok</string>
+    <string name="try_to_set_local_album_available_offline">Bu öğe yerel olarak depolandı ve çevrimdışı kullanılabilir.</string>
+    <string name="set_label_all_albums">Tüm albümler</string>
+    <string name="set_label_local_albums">Yerel albümler</string>
+    <string name="set_label_mtp_devices">MTP cihazlar</string>
+    <string name="set_label_picasa_albums">Picasa albümleri</string>
+    <string name="free_space_format">%s boş</string>
+    <string name="size_below">%1$s veya daha küçük</string>
+    <string name="size_above">%1$s veya daha büyük</string>
+    <string name="size_between">%1$s - %2$s</string>
+    <string name="Import">İçe aktar</string>
+    <string name="import_complete">İçe aktrm tamamlandı</string>
+    <string name="import_fail">İçe aktarılamadı</string>
+    <string name="camera_connected">Kamera bağlı.</string>
+    <string name="camera_disconnected">Kamera bağlantısı kesildi.</string>
+    <string name="click_import">İçe aktarmak için buraya dokunun</string>
+    <string name="widget_type_album">Albüm seçin</string>
+    <string name="widget_type_shuffle">Tüm resimleri karıştır</string>
+    <string name="widget_type_photo">Bir resim seç</string>
+    <string name="widget_type">Resimleri seçin</string>
+    <string name="slideshow_dream_name">Slayt gösterisi</string>
+    <string name="albums">Albümler</string>
+    <string name="times">Saatler</string>
+    <string name="locations">Konumlar</string>
+    <string name="people">Kişiler</string>
+    <string name="tags">Etiketler</string>
+    <string name="group_by">Grupla:</string>
+    <string name="folder_camera">Kamera</string>
+    <string name="folder_download">İndir</string>
+    <string name="folder_imported">İçe aktarıldı</string>
+    <string name="folder_screenshot">Ekran görüntüsü</string>
+    <string name="help">Yardım</string>
 </resources>
